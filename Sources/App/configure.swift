@@ -19,6 +19,7 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
 
     /// Register middleware
     var middlewares = MiddlewareConfig() // Create _empty_ middleware config
+    
     let cors = CORSMiddleware(
         configuration: .init(
             allowedOrigin: .all,
